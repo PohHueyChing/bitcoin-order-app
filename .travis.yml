@@ -8,7 +8,7 @@ sudo: required
 notifications:
   email:
     recipients:
-      - samanthapoh18@gmail.com
+      - hcpoh001s@gmail.com
     on_success: always
     on_failure: always
 branches:
