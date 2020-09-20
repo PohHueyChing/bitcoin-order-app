@@ -28,7 +28,7 @@ deploy:
   edge: true
   on:
     branch: development
-after_success:
-  - git push https://github.com/PohHueyChing/bitcoin-order-app :development
-after_failure:
-  - cat errors.log
+# after_success:
+#- git push https://github.com/PohHueyChing/bitcoin-order-app :development
+#after_failure:
+# - cat errors.log
