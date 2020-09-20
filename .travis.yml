@@ -31,4 +31,4 @@ deploy:
 after_success:
   - git push https://github.com/PohHueyChing/bitcoin-order-app :development
 after_failure:
-  - cat angular-errors.log
+  - cat errors.log
