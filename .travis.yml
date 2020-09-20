@@ -13,13 +13,13 @@ notifications:
     on_failure: always
 branches:
   only:
-   - development
+    - development
 before_script:
   - npm install -g @angular/cli
-  
+
 script:
   - ng build --prod --base-href https://PohHueyChing.github.io/bitcoin-order-app/
-  
+
 deploy:
   provider: pages
   skip_cleanup: true
@@ -28,3 +28,5 @@ deploy:
   edge: true
   on:
     branch: development
+after_success:
+  - git push https://github.com/PohHueyChing/bitcoin-order-app :development
