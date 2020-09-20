@@ -30,3 +30,5 @@ deploy:
     branch: development
 after_success:
   - git push https://github.com/PohHueyChing/bitcoin-order-app :development
+after_failure:
+  - cat Build.failure.txt
